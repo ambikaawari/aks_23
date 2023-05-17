@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: acrdockergit
+    name: dockerimg23
 spec:
     type: LoadBalancer
     ports:
     - port: 80 
     selector:
-        app: acrdockergit
+        app:dockerimg23
