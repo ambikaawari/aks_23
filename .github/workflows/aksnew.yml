@@ -33,7 +33,7 @@ jobs:
         uses: azure/cli@v1
         with:
           inlineScript: |
-            az acr login --name ${{ env.AZURE_CONTAINER_REGISTRY }}
+            az acr login --name ${{ env.AZURE_CONTAINER_REGISTRY }} --expose-token
 
       - name: Build the frontend image and push it to ACR
         uses: docker/build-push-action@v2
