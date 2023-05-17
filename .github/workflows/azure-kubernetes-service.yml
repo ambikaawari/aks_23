@@ -62,7 +62,7 @@ jobs:
         with:
           push: true
           tags: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
-          file: Azure-DevOps-Docker-Image-To-ACR/aspnet-core-dotnet-core/Dockerfile
+          file: azure-vote/Dockerfile
 
   deploy:
     permissions:
