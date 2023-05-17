@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: acrdockergit 
+  name: dockerimg23
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: acrdockergit
+      app: dockerimg23
   template:
     metadata:
       labels:
-        app: acrdockergit 
+        app: dockerimg23
     spec:
       containers:
         - name: acrdockergit 
-          image: aks0100acr.azurecr.io/acrdockergit
+          image: cont23.azurecr.io/dockerimg23:1388
           ports:
           - containerPort: 80
