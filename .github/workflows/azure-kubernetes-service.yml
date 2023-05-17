@@ -36,7 +36,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: "cont23"
-  CONTAINER_NAME: "dockerimg23"
+  CONTAINER_NAME: "aadockerimg23"
   RESOURCE_GROUP: "AKS"
   CLUSTER_NAME: "AKS-Cluster-AA-23"
   DEPLOYMENT_MANIFEST_PATH: "manifests/deployment.yml"
