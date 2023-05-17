@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: acrdockergit 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acrdockergit
+  template:
+    metadata:
+      labels:
+        app: acrdockergit 
+    spec:
+      containers:
+        - name: acrdockergit 
+          image: aks0100acr.azurecr.io/acrdockergit
+          ports:
+          - containerPort: 80
