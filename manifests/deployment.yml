@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: acrdockergit 
-          image: cont23.azurecr.io/dockerimg23:1388
+          image: cont23.azurecr.io/aadockerimg23
           ports:
           - containerPort: 80
